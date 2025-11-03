@@ -6,47 +6,47 @@ use Illuminate\Database\Eloquent\Model;
 
 class Movie extends Model
 {
-    public function GetMovies(){
+    public static function getMovies(){
         return [
             1 => [
-                'title' => "The Matrix",
-                'dicertor' => "The Wachowskis",
-                'category' => "Sci-Fi",
-                'year' => 1999,
-                'description' => 'When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.',
-                'image' => "https://www.imdb.com/title/tt0133093/mediaviewer/rm1764071938/?ref_=tt_ov_i"
+                'title' => 'Inception',
+                'director' => 'Christopher Nolan',
+                'category' => 'Sci-Fi',
+                'year' => 2010,
+                'description' => 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.',
+                'poster' => 'https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg'
             ],
             2 => [
-                'title' => "Inception",
-                'dicertor' => "Chistopher Nolen",
-                'category' => "Sci-Fi",
-                'year' => 2010,
-                'description' => 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.',
-                'image' => "https://www.imdb.com/title/tt1375666/mediaviewer/rm4241487105/?ref_=tt_ov_i"
+                'title' => 'The Matrix',
+                'director' => 'The Wachowskis',
+                'category'=> 'Sci-Fi',
+                'year' => 1999,
+                'description'=> 'the matrix has you',
+                'poster'=> 'https://m.media-amazon.com/images/I/51EG732BV3L.jpg'
             ],
             3 => [
-                'title' => "Interstellar",
-                'dicertor' => "Chistopher Nolen",
-                'category' => "Sci-Fi",
+                'title' => 'Interstellar',
+                'director' => 'Christopher Nolan',
+                'category'=> 'Sci-Fi',
                 'year' => 2014,
-                'description' => 'When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.',
-                'image' => "https://www.imdb.com/title/tt0816692/mediaviewer/rm3520863489/?ref_=tt_ov_i"
+                'description'=> 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity\'s survival.',
+                'poster'=> 'https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg'
             ],
             4 => [
-                'title' => "The Godfather",
-                'dicertor' => "Francis Ford Coppola",
-                'category' => "Crime",
+                'title' => 'The Godfather',
+                'director' => 'Francis Ford Coppola',
+                'category'=> 'Crime',
                 'year' => 1972,
-                'description' => "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
-                'image' => "https://www.imdb.com/title/tt0068646/mediaviewer/rm3135369473/?ref_=tt_ov_i"
+                'description'=> 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.',
+                'poster'=> 'https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg'
             ],
             5 => [
-                'title' => "Pulp Fiction",
-                'dicertor' => "Quentin Tarantino",
-                'category' => "Crime",
-                'year' => 2014,
-                'description' => 'The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.',
-                'image' => "https://www.imdb.com/title/tt0110912/mediaviewer/rm1229746689/?ref_=tt_ov_i"
+                'title' => 'Pulp Fiction',
+                'director' => 'Quentin Tarantino',
+                'category'=> 'Crime',
+                'year' => 1994,
+                'description'=> 'The lives of two mob hitmen, a boxer, a gangster\'s wife, and a pair of diner bandits intertwine in four tales of violence and redemption.',
+                'poster'=> 'https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg'
             ]
         ];
     }

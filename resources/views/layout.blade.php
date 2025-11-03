@@ -7,6 +7,16 @@
     <title>Welcome</title>
 </head>
 <body>
-
+    <div style="align-content: center">
+    <div>
+        @yield('content')
+    </div>
+    <div>
+        @yield('filtered')
+    </div>
+    <div>
+        @yield('filteredM')
+    </div>
+    </div>
 </body>
 </html>

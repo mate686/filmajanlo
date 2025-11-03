@@ -2,6 +2,16 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\MovieController;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+
+Route::get('/', [MovieController::class, 'index'])->name('movies.index');
+
+Route::get("/movies/{category}", [MovieController::class, 'category'])->name('movies.catergory');
+
+Route::get("/movie/{id}", [MovieController::class, 'search'])->name('movies.filteredFilm');
+
